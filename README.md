@@ -1,2 +1,2 @@
-# Flutter Ethio_Ecommerce
+# Flutter Ethio Ecommerce
  Flutter Ecommerce App
