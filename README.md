@@ -1,2 +1,2 @@
-# Flutter Ethio Ecommerce
- Flutter Ecommerce App
+# Flutter Movie App
+ Flutter Ecommerce based movie app
