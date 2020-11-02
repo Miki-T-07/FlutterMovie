@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_login_ui/utilities/constants.dart';
+
 
 class LoginScreen extends StatefulWidget {
   @override
