@@ -103,3 +103,51 @@ class MyFabButton extends StatelessWidget {
   }
 }
 
+class SMSItem extends StatelessWidget {
+  final String number;
+  final String text;
+
+  SMSItem({this.number, this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
+      child: Row(
+        children: [
+          CircleAvatar(
+            child: Icon(Icons.person),
+            backgroundColor: Colors.redAccent[400],
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    number,
+                    textAlign: TextAlign.left,
+                    style: TextStyle(fontSize: 17.0),
+                  ),
+                  Text(
+                    text,
+                    textAlign: TextAlign.left,
+                    style: TextStyle(fontSize: 15.0, color: Colors.grey),
+                  )
+                ],
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.topRight,
+            child: Text(
+              "Sat",
+              style: TextStyle(fontSize: 15.0, color: Colors.grey),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
